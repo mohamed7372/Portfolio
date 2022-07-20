@@ -1,12 +1,15 @@
 :root {
-  --main-color: hotpink;
+  --main-color: rgb(45, 64, 100);
   --second-color: #ffffff;
-  --pane-padding: 5px 42px;
+  --grey-color: #888;
 }
 
 * {
   margin: 0;
   padding: 0;
-  font-size: 16px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style-type: none;
 }
