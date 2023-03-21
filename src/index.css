@@ -7,7 +7,7 @@ font-family: 'Inter', sans-serif; */
 @tailwind utilities;
 
 .responsive {
-  @apply container mx-auto
+  @apply container mx-auto px-0
 }
 
 :root{
@@ -22,7 +22,7 @@ font-family: 'Inter', sans-serif; */
   padding: 0;
   box-sizing: content-box;
   font-family: 'Inter', sans-serif;
-  color: var(--second-color);
+  color: #7d87a4;
 }
 
 body {

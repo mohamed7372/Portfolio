@@ -4,7 +4,7 @@ const NavBar = () => {
     return (
         <nav className="shadow-lg">
             <div className="responsive w-full h-50 flex justify-between items-center py-4">
-                {/* <img src="" alt="logo" /> */}
+                
                 <h1 className="font-extrabold text-xl">Benrabah.M</h1>
                 <ul className="flex text-sm">
                     <li className="px-4 py-2 text-secondary-100 cursor-pointer hover:text-primary-200 flex items-center">
