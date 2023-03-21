@@ -1,0 +1,42 @@
+[
+    {
+        "company": "datagix",
+        "position": "Engineer",
+        "date": "may 2018 - Present",
+        "tasks": [
+            "Write modern, performant, maintainable code for a diverse array of client and internal projects",
+            "Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify",
+            "Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis"
+        ]
+    },
+    {
+        "company": "datagix",
+        "position": "p",
+        "date": "d",
+        "tasks": [
+            "adsfjaskdfj",
+            "adsfjaskdfj",
+            "adsfjaskdfj"
+        ]
+    },
+    {
+        "company": "datagix",
+        "position": "p",
+        "date": "d",
+        "tasks": [
+            "adsfjaskdfj",
+            "adsfjaskdfj",
+            "adsfjaskdfj"
+        ]
+    },
+    {
+        "company": "datagix",
+        "position": "p",
+        "date": "d",
+        "tasks": [
+            "adsfjaskdfj",
+            "adsfjaskdfj",
+            "adsfjaskdfj"
+        ]
+    }
+]

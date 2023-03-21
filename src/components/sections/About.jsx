@@ -6,7 +6,7 @@ const About = () => {
     return (
         <div className='responsive flex flex-col justify-center items-center h-screen'>
             <div className='w-full'>
-                <TitleSection nbr={'01'} title={'About Me'} />
+                <TitleSection nbr={'01'} title={'About Me'} width='36'/>
             </div>
             <div className='flex h-fit'>
                 <div className='w-2/3'>
