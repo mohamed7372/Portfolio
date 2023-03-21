@@ -28,3 +28,21 @@ font-family: 'Inter', sans-serif; */
 body {
   background-color: var(--bg-color);
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background-color: #0a192f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7f8bad;
+  border-radius: 100vh;
+}

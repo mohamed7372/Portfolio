@@ -1,6 +1,7 @@
 import Contact from "./components/Contact";
-import Header from "./layout/Header";
 import ListProjects from "./components/ListProjects";
+import About from "./components/sections/About";
+import Header from "./components/sections/Header";
 import NavBar from "./layout/NavBar";
 
 function App() {
@@ -8,8 +9,9 @@ function App() {
     <div className="App">
       <NavBar />
       <Header />
-      <ListProjects />
-      <Contact />
+      <About/>
+      {/* <ListProjects />
+      <Contact /> */}
     </div>
   );
 }
