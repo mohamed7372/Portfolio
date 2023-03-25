@@ -1,8 +1,41 @@
 [
     {
-        "name": "JavaScript (ES6+)"
+        "name": "React"
     },
     {
-        "name": "React"
+        "name": "Express"
+    },
+    {
+        "name": "Node.js"
+    },
+    {
+        "name": "MongoDB"
+    },
+    {
+        "name": "RESTfull API"
+    },
+    {
+        "name": "ESLint"
+    },
+    {
+        "name": "Taillwind"
+    },
+    {
+        "name": "Bootstrap"
+    },
+    {
+        "name": "PHP"
+    },
+    {
+        "name": "OOP"
+    },
+    {
+        "name": "Java (Swing)"
+    },
+    {
+        "name": "Python"
+    },
+    {
+        "name": "Git/ Github"
     }
 ]

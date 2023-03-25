@@ -4,9 +4,9 @@ import CardProject from '../ui/CardProject'
 
 const Project = () => {
     return (
-        <div className='responsive'>
-            <h2>Other Noteworthy Projects</h2>
-            <p>view the archive</p>
+        <div className='responsive flex flex-col justify-center items-center h-screen'>
+            <h4 className='text-sm text-primary-200'>view the archive</h4>
+            <h1 className='text-5xl text-secondary-100 font-bold mt-4 mb-10'>Other Noteworthy Projects</h1>
             <div className='grid grid-cols-3 gap-4'>
                 <CardProject/>
                 <CardProject/>
