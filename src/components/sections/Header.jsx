@@ -2,7 +2,7 @@ import Button from "../ui/Button";
 
 const Header = () => {
     return (
-        <div className="responsive h-screen flex flex-col justify-center -mt-10 w-full">
+        <div className="responsive min-h-screen flex flex-col justify-center -mt-10 w-full">
             <h6 className="text-primary-200 tracking-widest text-sm">Hi, my name is</h6>
             <h1 className="text-secondary-100 font-extrabold text-7xl mt-8 mb-4">BENRABAH Mohamed.</h1>
             <h1 className="text-5xl font-bold mb-8">I build things for the web.</h1>
