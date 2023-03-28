@@ -25,6 +25,10 @@ font-family: 'Inter', sans-serif; */
   color: #7d87a4;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--bg-color);
 }

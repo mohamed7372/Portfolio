@@ -20,8 +20,10 @@ const NavBar = () => {
                         Work
                     </li>
                     <li className="px-4 py-2 text-secondary-100 cursor-pointer hover:text-primary-200 flex items-center">
-                        <span className="text-primary-200 font-medium mr-1">04.</span>
-                        Contact
+                        <a href="#contact">
+                            <span className="text-primary-200 font-medium mr-1">04.</span>
+                            Contact
+                        </a>
                     </li>
                     <li className="px-4 py-2">
                         <Button name_btn='Resume' padding_left_right={4} padding_top_bottom={2} />
