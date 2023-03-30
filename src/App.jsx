@@ -1,4 +1,5 @@
 import About from "./components/sections/About";
+import Build from "./components/sections/Build";
 import Contact from "./components/sections/Contact";
 import Header from "./components/sections/Header";
 import Project from "./components/sections/Project";
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <About />
       <Work />
+      <Build/>
       <Project />
       <Contact/>
       
