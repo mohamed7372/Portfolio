@@ -1,15 +1,17 @@
 import React from 'react'
+import Carousel from './Carousel'
 
-const CardBuild = ({build, inverse=false}) => {
+const CardBuild = ({ build, inverse = false }) => {
+    const slides = [
+        <img src={require('../../assets/img/edt 1.png')} alt="" className='h-96 w-full object-cover'/>,
+        <img src={require('../../assets/img/edt 1.png')} alt="" className='h-96 w-full object-cover'/>
+    ]
+
     return (
-        <div className='flex mb-20'>
-            <div className={`w-2/3 ${inverse && 'order-2'} relative opacity-30 hover:opacity-100`}>
-                <img
-                    src={require('../../assets/img/' + build.img)}
-                    alt={build.title}
-                    className='h-96 w-full object-cover'
-                />
-                <div className='absolute top-0 left-0 w-full h-full bg-primary-200 opacity-20 hover:opacity-0'></div>
+        <div className='flex mb-20 items-center'>
+            <div className={`w-2/3 ${inverse && 'order-2'} relative opacity-30 hover:opacity-100 flex items-center h-full`}>
+                <Carousel children={slides}/>
+                {/* <div className='absolute top-0 left-0 w-full h-full bg-primary-200 opacity-20 hover:opacity-0'></div> */}
             </div>
             <div className={`w-1/3 flex flex-col ${inverse ? 'items-start' : 'items-end'} justify-center relative ${inverse && 'order-1'}`}>
                 <h6 className='text-primary-200 text-xs mb-1'>{build.type}</h6>
