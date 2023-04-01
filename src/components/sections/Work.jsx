@@ -12,7 +12,7 @@ const Work = () => {
     }
 
     return (
-        <div className='responsive flex flex-col justify-center items-center h-screen'>
+        <div className='responsive flex flex-col justify-center items-center h-screen' id='experience'>
             <div className='w-full'>
                 <TitleSection nbr={'02'} title={'Where I\'ve Worked'} width='64'/>
             </div>

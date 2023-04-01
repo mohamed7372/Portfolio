@@ -8,16 +8,22 @@ const NavBar = () => {
                 <h1 className="font-extrabold text-xl">Benrabah.M</h1>
                 <ul className="flex text-sm">
                     <li className="px-4 py-2 text-secondary-100 cursor-pointer hover:text-primary-200 flex items-center">
-                        <span className="text-primary-200 font-medium mr-1">01.</span>
-                        About
+                        <a href="#about">
+                            <span className="text-primary-200 font-medium mr-1">01.</span>
+                            About
+                        </a>
                     </li>
                     <li className="px-4 py-2 text-secondary-100 cursor-pointer hover:text-primary-200 flex items-center">
-                        <span className="text-primary-200 font-medium mr-1">02.</span>
-                        Experience
+                        <a href="#experience">
+                            <span className="text-primary-200 font-medium mr-1">02.</span>
+                            Experience
+                        </a>
                     </li>
                     <li className="px-4 py-2 text-secondary-100 cursor-pointer hover:text-primary-200 flex items-center">
-                        <span className="text-primary-200 font-medium mr-1">03.</span>
-                        Work
+                        <a href="#project">
+                            <span className="text-primary-200 font-medium mr-1">03.</span>
+                            Project
+                        </a>
                     </li>
                     <li className="px-4 py-2 text-secondary-100 cursor-pointer hover:text-primary-200 flex items-center">
                         <a href="#contact">
@@ -26,7 +32,7 @@ const NavBar = () => {
                         </a>
                     </li>
                     <li className="px-4 py-2">
-                        <Button name_btn='Resume' padding_left_right={4} padding_top_bottom={2} />
+                        <Button name_btn='Resume' padding='px-3 py-2' />
                     </li>
                 </ul>
             </div>

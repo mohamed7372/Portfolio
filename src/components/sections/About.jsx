@@ -6,7 +6,7 @@ import ImgProfil from '../../assets/img/benrabah.JPG'
 
 const About = () => {
     return (
-        <div className='responsive flex flex-col justify-center items-center min-h-screen'>
+        <div className='responsive flex flex-col justify-center items-center min-h-screen' id='about'>
             <div className='w-full'>
                 <TitleSection nbr={'01'} title={'About Me'} width='36'/>
             </div>
