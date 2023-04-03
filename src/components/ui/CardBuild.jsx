@@ -15,8 +15,8 @@ const CardBuild = ({ build, inverse = false }) => {
             </div>
             <div className={`w-1/3 flex flex-col ${inverse ? 'items-start' : 'items-end'} justify-center relative ${inverse && 'order-1'}`}>
                 <h6 className='text-primary-200 text-xs mb-1'>{build.type}</h6>
-                <h2 className='text-secondary-100 font-bold text-xl lg:text-3xl mb-8'>{build.title}</h2>
-                <div className={`bg-secondary-250 shadow-lg p-4 absolute ${inverse ? 'left-0' : 'right-0'} z-30 w-[400px]`}>
+                <h2 className={`${inverse ? 'text-left' : 'text-right'} text-secondary-100 font-bold text-xl lg:text-3xl mb-8`}>{build.title}</h2>
+                <div className={`bg-secondary-250 shadow-lg p-4 absolute top-24 ${inverse ? 'left-0' : 'right-0'} z-30 w-[400px]`}>
                     <p className={` ${inverse ? 'text-left' : 'text-right'} text-sm`}>{build.description}</p>
                 </div>
                 <div className='bg-secondary-250 shadow-lg p-4 opacity-0 w-[400px]'>

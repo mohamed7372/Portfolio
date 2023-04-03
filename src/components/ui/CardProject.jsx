@@ -1,11 +1,12 @@
 import React from 'react'
+import FolderOpenIcon from '@mui/icons-material/FolderOpen';
 
 const CardProject = () => {
     return (
         <div className='bg-secondary-250 rounded-lg shadow-lg px-4 h-[270px]'>
-            <div className='flex justify-between h-16'>
+            <div className='flex justify-between items-center h-16'>
                 <div className='w-fit h-fit'>
-                    f
+                    <FolderOpenIcon fontSize='large'/>
                 </div>
                 <ul className='flex items-center justify-end'>
                     <li className='ml-3'>

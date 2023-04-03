@@ -11,9 +11,11 @@ const Header = () => {
                 <span className="text-secondary-100 hover:underline hover:text-primary-200 cursor-pointer"> software engineer </span>
                 specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible.</p>
             <div className="mt-10">
-                <Button
-                    name_btn='Check out my course!'
-                    padding='px-6 py-3'/>
+                <a href="#contact">
+                    <Button
+                        name_btn='Hire Me!'
+                        padding='px-6 py-3' />
+                </a>
             </div>
         </div>
     );
