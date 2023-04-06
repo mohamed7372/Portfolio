@@ -21,8 +21,8 @@
         "nbrLink": 0
     },
     {
-        "title": "Automatic TimeTable Generation",
-        "type": "University",
+        "title": "Ecommerce (Games, Cards, Console, ...)",
+        "type": "Self Project",
         "description": "My graduation project was to create correct timing tables for the College of Automated Media using artificial intelligence and get rid of a traditional method that is difficult. We used a genetic algorithm to create tables free of confusion. We also added the feature of requesting a class change or adding a class that occurs automatically by finding an empty section free time for the professor and students Only those concerned remain with the approval of the administration.",
         "lang": [
             "html",

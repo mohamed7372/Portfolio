@@ -7,21 +7,31 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 const SocialMedia = () => {
     return (
-        <ul className='flex flex-col items-center justify-between'>
-            <li className='pb-4'>
-                <GitHubIcon className='cursor-pointer'/>
+        <ul className='flex flex-col items-center fixed left-48 bottom-0'>
+            <li className='pb-4 cursor-pointer'>
+                <a href='https://github.com/mohamed7372'>
+                    <GitHubIcon className='cursor-pointer hover:opacity-50'/>
+                </a>
             </li>
-            <li className='pb-4'>
-                <InstagramIcon className='cursor-pointer'/>
+            <li className='pb-4 cursor-pointer'>
+                <a href='https://www.instagram.com/benra_mohamed/'>
+                    <InstagramIcon className='cursor-pointer hover:opacity-50'/>
+                </a>
             </li>
-            <li className='pb-4 '>
-                <LinkedInIcon className='cursor-pointer'/>
+            <li className='pb-4  cursor-pointer'>
+                <a href=''>
+                    <LinkedInIcon className='cursor-pointer hover:opacity-50'/>
+                </a>
             </li>
-            <li className='pb-4'>
-                <YouTubeIcon className='cursor-pointer'/>
+            <li className='pb-4 cursor-pointer'>
+                <a href='https://www.youtube.com/channel/UCRdRWW8Jx8Zt0jMWVLt7cMQ'>
+                    <YouTubeIcon className='cursor-pointer hover:opacity-50'/>
+                </a>
             </li>
-            <li className='pb-4'>
-                <FacebookIcon className='cursor-pointer'/>
+            <li className='pb-4 cursor-pointer'>
+                <a href='https://www.facebook.com/profile.php?id=100009930451485'>
+                    <FacebookIcon className='cursor-pointer hover:opacity-50'/>
+                </a>
             </li>
             <li className='ml-1'>
                 <div className='h-36 w-1 border-l border-secondary-200'></div>

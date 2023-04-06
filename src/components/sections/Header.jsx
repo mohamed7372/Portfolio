@@ -1,8 +1,16 @@
 import Button from "../ui/Button";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+import { useEffect } from "react";
+
 const Header = () => {
+    useEffect(() => {
+        AOS.init({duration:4000});
+    }, [])
+
     return (
-        <div className="responsive min-h-screen flex flex-col justify-center -mt-10 w-full">
+        <div className="responsive min-h-screen flex flex-col justify-center -mt-10 w-full" data-aos='fade-in'>
             <h6 className="text-primary-200 tracking-widest text-sm">Hi, my name is</h6>
             <h1 className="text-secondary-100 font-extrabold text-7xl mt-8 mb-4">BENRABAH Mohamed.</h1>
             <h1 className="text-5xl font-bold mb-8">I build things for the web.</h1>
