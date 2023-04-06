@@ -1,6 +1,9 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import TitleSection from '../ui/TitleSection'
 import worksData from '../../data/works.json'
+
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 const Work = () => {
     const [selectWork,setSelectWork] = useState(0)
@@ -9,13 +12,17 @@ const Work = () => {
         setSelectWork(idx)
     }
 
+    useEffect(() => {
+        AOS.init({duration:2000});
+    }, [])
+
     return (
         <div className='responsive flex flex-col justify-center items-center h-screen' id='experience'>
-            <div className='w-full'>
+            <div className='w-full' data-aos='fade-right'>
                 <TitleSection nbr={'02'} title={'Where I\'ve Worked'} width='64'/>
             </div>
             <div className='flex h-fit w-full'>
-                <ul className='w-fit mr-14'>
+                <ul className='w-fit mr-14' data-aos='fade-right'>
                     {
                         worksData.map((work, idx) => 
                             <li key={idx} onClick={(event) => handleSelectWork(event, idx)}
@@ -27,7 +34,7 @@ const Work = () => {
                     }
                 </ul>
                 {worksData.map((work, idx) => 
-                    <div key={idx} className={`mt-2.5 ${selectWork !== idx && 'hidden'}`}>
+                    <div key={idx} className={`mt-2.5 ${selectWork !== idx && 'hidden'}`} data-aos='fade-left'>
                         <h3 className='text-secondary-100 font-bold capitalize'>
                             {work.position}
                             <span className='text-primary-200 ml-3'>@ {work.company}</span>

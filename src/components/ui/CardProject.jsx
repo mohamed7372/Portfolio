@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import FolderOpenIcon from '@mui/icons-material/FolderOpen';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+
 const CardProject = () => {
+    useEffect(() => {
+        AOS.init({duration:2000});
+    }, [])
+
     return (
-        <div className='bg-secondary-250 rounded-lg shadow-lg px-4 h-[270px]'>
+        <div className='bg-secondary-250 rounded-lg shadow-lg px-4 h-[270px]' data-aos='zoom-in'>
             <div className='flex justify-between items-center h-16'>
                 <div className='w-fit h-fit'>
                     <FolderOpenIcon fontSize='large'/>

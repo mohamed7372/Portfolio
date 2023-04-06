@@ -1,6 +1,9 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import emailjs from 'emailjs-com'
 import Notification from '../ui/Notification'
+
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 const ContactForm = () => {
     const [notification, showNotification] = useState(false)
@@ -27,7 +30,11 @@ const ContactForm = () => {
             showNotification(false)
         }, 3500);
     }
-        
+    
+    useEffect(() => {
+        AOS.init({duration:2000});
+    }, [])
+
     return (
         <form className='flex flex-col w-full' onSubmit={sendEmail}>
             {notification

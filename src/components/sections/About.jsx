@@ -15,7 +15,7 @@ const About = () => {
 
     return (
         <div className='responsive flex flex-col justify-center items-center min-h-screen' id='about'>
-            <div className='w-full'>
+            <div className='w-full' data-aos='fade-right'>
                 <TitleSection nbr={'01'} title={'About Me'} width='36'/>
             </div>
             <div className='flex h-fit'>
