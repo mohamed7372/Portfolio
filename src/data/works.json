@@ -1,36 +1,25 @@
 [
     {
+        "company": "Freelance",
+        "position": "Full Stack",
+        "date": "jui 2020 - Present",
+        "tasks": [
+            "Develop everything related to the front-end of the sites using React or from scratch, make modification on the front-end and repairing errors.",
+            "Develop everything related to the back-end of the sites, handle the databases and create API, Repairing errors, Add new features.",
+            "Work in Fiverr, clients from pages in facebook."
+        ]
+    },
+    {
         "company": "datagix",
         "position": "Full Stack",
         "date": "mars 2022 - mai 2022",
         "tasks": [
-            "Write modern, performant, maintainable code for a diverse array of client and internal projects",
-            "Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify",
-            "Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis"
+            "Redesign the front end of the company's website using WordPress https://www.datagix.com/",
+            "I have developed Backend parts for new added systems at the customer's request, using Codeigniter and handling databases in MySql. The development of these additions was based on the previous code and functions helpers"
         ]
     },
     {
-        "company": "datagix",
-        "position": "p",
-        "date": "d",
-        "tasks": [
-            "adsfjaskdfj",
-            "adsfjaskdfj",
-            "adsfjaskdfj"
-        ]
-    },
-    {
-        "company": "datagix",
-        "position": "p",
-        "date": "d",
-        "tasks": [
-            "adsfjaskdfj",
-            "adsfjaskdfj",
-            "adsfjaskdfj"
-        ]
-    },
-    {
-        "company": "datagix",
+        "company": "Hackathons ....",
         "position": "p",
         "date": "d",
         "tasks": [

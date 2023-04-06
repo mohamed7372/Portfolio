@@ -30,36 +30,35 @@
             "js",
             "php",
             "mysql",
-            "java"
+            "bootstrap"
         ],
         "img": [
-            "edt 1.png",
-            "edt 2.png",
-            "edt 3.png"
+            "ecom 4.png",
+            "ecom 5.png",
+            "ecom 3.png",
+            "ecom 1.png",
+            "ecom 2.png"
         ],
         "git": "",
         "web": "",
         "nbrLink": 0
     },
     {
-        "title": "Automatic TimeTable Generation",
-        "type": "University",
+        "title": "Design Fest",
+        "type": "Micro Club USTHB",
         "description": "My graduation project was to create correct timing tables for the College of Automated Media using artificial intelligence and get rid of a traditional method that is difficult. We used a genetic algorithm to create tables free of confusion. We also added the feature of requesting a class change or adding a class that occurs automatically by finding an empty section free time for the professor and students Only those concerned remain with the approval of the administration.",
         "lang": [
             "html",
             "css",
-            "js",
-            "php",
-            "mysql",
-            "java"
+            "js"
         ],
         "img": [
-            "edt 1.png",
-            "edt 2.png",
-            "edt 3.png"
+            "mc 1.png",
+            "mc 2.png",
+            "mc 3.png"
         ],
         "git": "",
-        "web": "",
+        "web": "https://design-fest.netlify.app/",
         "nbrLink": 0
     },
     {
