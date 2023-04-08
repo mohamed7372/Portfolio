@@ -21,7 +21,9 @@ const Project = () => {
                 <CardProject/>
             </div>
             <div className='mt-14 flex justify-center' data-aos='fade-up'>
-                <Button name_btn='Show More' padding='px-6 py-3' />
+                <a href="https://github.com/mohamed7372">
+                    <Button name_btn='Show More' padding='px-6 py-3' />
+                </a>
             </div>
         </div>
     )

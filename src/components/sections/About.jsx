@@ -18,8 +18,8 @@ const About = () => {
             <div className='w-full' data-aos='fade-right'>
                 <TitleSection nbr={'01'} title={'About Me'} width='36'/>
             </div>
-            <div className='flex h-fit'>
-                <div data-aos="fade-up" className='w-2/3'>
+            <div className='flex flex-col md:flex-row h-fit'>
+                <div data-aos="fade-up" className='w-full md:w-2/3'>
                     <p>Welcome! My name is <span className='font-extrabold'>BENRABAH Mohamed</span> and I enjoy creating things that live online. My interest in <span className='text-primary-200'> web development started in 2021</span> when I decided to try building a website for my graduation project.</p>
                     <p className='mt-4'>I loved the field a lot and gave it a lot of time to develop my skills, as I learned well by working on projects for our club
                         <a className='text-primary-200 hover:underline ml-1' href='https://microclub.tech/'>'Micro Club'</a>.
@@ -41,16 +41,15 @@ const About = () => {
                     </ul>
                     <p className='mt-4'>Here are a few Softwares I’ve been working:</p>
                 </div>
-                <div className='w-64 h-64 border-2 rounded-md border-primary-200 relative ml-14 mt-4' data-aos='fade-left'>
+                <div className='w-64 h-64 border-2 rounded-md border-primary-200 relative ml-14 mt-4 hidden md:block' data-aos='fade-left'>
                     <img src={ImgProfil} alt="benrabah mohamed"
                         className='object-cover object-left bg-secondary-200 absolute h-full w-full -left-4 -top-4 rounded-lg' />
                     <div className='bg-primary-200 bg-opacity-25 absolute h-full w-full -left-4 -top-4 rounded-lg cursor-pointer hover:bg-opacity-0'>
                     </div>
                 </div>
             </div>
-            
-            
-            <ul className='mt-4 grid grid-cols-5 w-full' data-aos='fade-right'>
+                    
+            <ul className='mt-4 grid grid-cols-3 md:grid-cols-5 w-full' data-aos='fade-right'>
                 {softwareData.map((soft, idx) => 
                     <li key={idx} className='text-sm py-1 flex items-center'>
                         <div className='mr-2'>
@@ -62,6 +61,13 @@ const About = () => {
                     </li>
                 )}
             </ul>
+
+            <div className='mt-14 w-64 h-64 border-2 rounded-md border-primary-200 relative ml-14 md:hidden block' data-aos='fade-up'>
+                <img src={ImgProfil} alt="benrabah mohamed"
+                    className='object-cover object-left bg-secondary-200 absolute h-full w-full -left-4 -top-4 rounded-lg' />
+                <div className='bg-primary-200 bg-opacity-25 absolute h-full w-full -left-4 -top-4 rounded-lg cursor-pointer hover:bg-opacity-0'>
+                </div>
+            </div>
         </div>
     )
 }

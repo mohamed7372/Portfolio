@@ -21,12 +21,12 @@ const Work = () => {
             <div className='w-full' data-aos='fade-right'>
                 <TitleSection nbr={'02'} title={'Where I\'ve Worked'} width='64'/>
             </div>
-            <div className='flex h-fit w-full'>
-                <ul className='w-fit mr-14' data-aos='fade-right'>
+            <div className='flex flex-col md:flex-row h-fit w-full'>
+                <ul className='mr-14 flex md:block justify-center w-full mb-4 md:mb-0' data-aos='fade-right'>
                     {
                         worksData.map((work, idx) => 
                             <li key={idx} onClick={(event) => handleSelectWork(event, idx)}
-                                className={`capitalize text-sm border-l-2 cursor-pointer hover:bg-blue-800 hover:bg-opacity-20
+                                className={`capitalize text-sm border-b-2 border-l-0 md:border-b-0 md:border-l-2 cursor-pointer hover:bg-blue-800 hover:bg-opacity-20
                                 ${idx === selectWork ? 'text-primary-200 border-primary-200' : 'border-secondary-200 border-opacity-20'} px-3 py-3`}>
                                 {work.company}
                             </li>

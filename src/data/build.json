@@ -57,30 +57,8 @@
             "mc 2.png",
             "mc 3.png"
         ],
-        "git": "",
+        "git": "https://github.com/mohamed7372/Design-Fest",
         "web": "https://design-fest.netlify.app/",
         "nbrLink": 0
-    },
-    {
-        "title": "Automatic TimeTable Generation",
-        "type": "University",
-        "description": "My graduation project was to create correct timing tables for the College of Automated Media using artificial intelligence and get rid of a traditional method that is difficult. We used a genetic algorithm to create tables free of confusion. We also added the feature of requesting a class change or adding a class that occurs automatically by finding an empty section free time for the professor and students Only those concerned remain with the approval of the administration.",
-        "lang": [
-            "html",
-            "css",
-            "js",
-            "php",
-            "mysql",
-            "java"
-        ],
-        "img": [
-            "edt 1.png",
-            "edt 2.png",
-            "edt 3.png"
-        ],
-        "git": "",
-        "web": "",
-        "nbrLink": 0
     }
-    
 ]
