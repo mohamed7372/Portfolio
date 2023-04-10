@@ -7,7 +7,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 const SocialMedia = () => {
     return (
-        <ul className='flex flex-col items-center fixed left-48 bottom-0'>
+        <ul className='flex-col items-center fixed bottom-0 hidden md:flex left-10 lg:left-24 xl:left-48'>
             <li className='pb-4 cursor-pointer'>
                 <a href='https://github.com/mohamed7372'>
                     <GitHubIcon className='cursor-pointer hover:opacity-50'/>

@@ -4,7 +4,7 @@ import FolderOpenIcon from '@mui/icons-material/FolderOpen';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 
-const CardProject = () => {
+const CardProject = ({project}) => {
     useEffect(() => {
         AOS.init({duration:2000});
     }, [])
@@ -30,13 +30,15 @@ const CardProject = () => {
             </div>
             <div className='flex flex-col justify-between h-[185px]'>
                 <div>
-                    <h2 className='font-bold text-lg mb-3 text-white'>Time to have More Fun</h2>
-                    <p className='text-xs text-secondary-100'>Lorem ipsum dolor,asdf asdfa sit amet consectetur adipisicing elit. Unde consectetur dignissimos reprehenderit est aut asperiores.</p>
+                    <h2 className='font-bold text-lg mb-3 text-white'>{project.title}</h2>
+                    <p className='text-xs text-secondary-100'>{ project.description}</p>
                 </div>
                 <ul className='flex items-center text-xs mt-4 text-secondary-100 text-opacity-30'>
-                    <li className='mr-3'>React.js</li>
-                    <li className='mr-3'>React.js</li>
-                    <li className='mr-3'>React.js</li>
+                    {
+                        project.lang.map((item, idx) =>
+                            <li className='mr-3' key={idx}>{item}</li>
+                        )
+                    }
                 </ul>
             </div>
         </div>

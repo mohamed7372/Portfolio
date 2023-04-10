@@ -7,7 +7,7 @@ font-family: 'Inter', sans-serif; */
 @tailwind utilities;
 
 .responsive {
-  @apply container mx-auto px-10 md:px-20 xl:px-60 
+  @apply container mx-auto px-10 sm:px-14 md:px-20 xl:px-60 
 }
 
 :root{

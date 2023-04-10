@@ -22,7 +22,7 @@ const Work = () => {
                 <TitleSection nbr={'02'} title={'Where I\'ve Worked'} width='64'/>
             </div>
             <div className='flex flex-col md:flex-row h-fit w-full'>
-                <ul className='mr-14 flex md:block justify-center w-full mb-4 md:mb-0' data-aos='fade-right'>
+                <ul className='mr-14 flex md:block justify-center mb-4 md:mb-0 md:w-1/3 w-full' data-aos='fade-right'>
                     {
                         worksData.map((work, idx) => 
                             <li key={idx} onClick={(event) => handleSelectWork(event, idx)}

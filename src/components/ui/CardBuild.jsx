@@ -4,23 +4,23 @@ import Carousel from './Carousel'
 const CardBuild = ({ build, inverse = false }) => {
     const slides = build.img.map((item, idx) => {
         var imgSrc = require(`../../assets/img/${item}`)
-        return <img src={imgSrc} alt = "" className = 'h-96 w-full object-cover' />
+        return <img src={imgSrc} key={idx} alt = "" className = 'h-96 w-full object-cover' />
     })
 
     return (
         <div className='flex mb-20 items-center'>
-            <div className={`w-2/3 ${inverse && 'order-2'} relative opacity-30 hover:opacity-100 flex items-center h-full`}>
+            <div className={`w-2/3 ${inverse && 'order-2'} relative opacity-30 hover:opacity-100 items-center hidden lg:flex`}>
                 <Carousel children={slides}/>
                 {/* <div className='absolute top-0 left-0 w-full h-full bg-primary-200 opacity-20 hover:opacity-0'></div> */}
             </div>
-            <div className={`w-1/3 flex flex-col ${inverse ? 'items-start' : 'items-end'} justify-center relative ${inverse && 'order-1'}`}>
+            <div className={`w-full lg:w-1/3 flex flex-col ${inverse ? 'lg:items-start' : 'lg:items-end'} items-center justify-center relative ${inverse && 'order-1'}`}>
                 <h6 className='text-primary-200 text-xs mb-1'>{build.type}</h6>
-                <h2 className={`${inverse ? 'text-left' : 'text-right'} text-secondary-100 font-bold text-xl lg:text-3xl mb-8`}>{build.title}</h2>
-                <div className={`bg-secondary-250 shadow-lg p-4 absolute top-24 ${inverse ? 'left-0' : 'right-0'} z-30 w-[400px]`}>
+                <h2 className={`${inverse ? 'lg:text-left' : 'lg:text-right'} text-center text-secondary-100 font-bold text-xl lg:text-3xl mb-4 lg:mb-8`}>{build.title}</h2>
+                <div className={`bg-secondary-250 shadow-lg p-4 absolute top-24 ${inverse ? 'left-0' : 'right-0'} z-30 w-[400px] hidden lg:block`}>
                     <p className={` ${inverse ? 'text-left' : 'text-right'} text-sm`}>{build.description}</p>
                 </div>
-                <div className='bg-secondary-250 shadow-lg p-4 opacity-0 w-[400px]'>
-                    <p className='text-right text-sm'>{build.description}</p>
+                <div className='bg-secondary-250 shadow-lg p-4 opacity-1 lg:opacity-0 w-full'>
+                    <p className='text-left text-sm'>{build.description}</p>
                 </div>
                 <ul className='flex text-sm mt-4 font-light'>
                     {build.lang.map((item, idx) => 
