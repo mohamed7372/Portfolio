@@ -6,7 +6,11 @@
             "MERN",
             "Flutter",
             "Python / IA"
-        ]
+        ],
+        "links":{
+            "github":"https://github.com/mohamed7372/Naftal-app-Hackit",
+            "web": "https://devpost.com/software/naftal-ride#updates"
+        }
     },
     {
         "title": "Hygie",
@@ -16,7 +20,11 @@
             "Css",
             "JS",
             "PHP"
-        ]
+        ],
+        "links":{
+            "github": "https://github.com/mohamed7372/hygie",
+            "web": ""
+        }
     },
     {
         "title": "Gallery",
@@ -26,7 +34,11 @@
             "Css",
             "JS",
             "PHP"
-        ]
+        ],
+        "links":{
+            "github":"https://github.com/mohamed7372/gallery-website",
+            "web": ""
+        }
     },
     {
         "title": "Skribbl",
@@ -34,8 +46,13 @@
         "lang":[
             "Html",
             "Css",
-            "JS"
-        ]
+            "JS",
+            "Php"
+        ],
+        "links":{
+            "github":"https://github.com/mohamed7372/Skribbl-Game-MC",
+            "web": ""
+        }
     },
     {
         "title": "Nechki (CIRM)",
@@ -44,17 +61,11 @@
             "Html",
             "Css",
             "JS",
-            "PHP"
-        ]
-    },
-    {
-        "title": "Hygie",
-        "description": "A web application embedded in Techmology’s Moborne touch terminal. Used mainly in public large hospitals to assist patients through their journey.",
-        "lang":[
-            "Html",
-            "Css",
-            "JS",
-            "PHP"
-        ]
+            "React"
+        ],
+        "links":{
+            "github":"",
+            "web": "https://nechki.netlify.app/"
+        }
     }
 ]
