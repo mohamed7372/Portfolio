@@ -56,9 +56,9 @@ const ContactForm = () => {
             
             <input type="email" name="email" id="email" placeholder='Enter your email' className='placeholder-secondary-200 text-secondary-100 mt-4 rounded-md outline-none px-3 py-2 text-sm bg-secondary-250'/>
 
-            <textarea name="message" id="message" placeholder='Enter your message' cols="30" rows="10" className='placeholder-secondary-200 text-secondary-100 mt-4 rounded-md outline-none px-3 py-2 text-sm bg-secondary-250 max-h-64'></textarea>
+            <textarea name="message" id="message" placeholder='Enter your message' cols="30" rows="10" className='placeholder-secondary-200 text-secondary-100 mt-4 rounded-md outline-none px-3 py-2 text-sm bg-secondary-250 max-h-64 min-h-[40px]'></textarea>
 
-            <button type="submit" className='rounded-md border mt-4 border-primary-200 text-primary-200 py-2 px-8 w-fit m-auto'>Submit</button>
+            <button type="submit" className='rounded-md border mt-4 border-primary-200 text-primary-200 py-3 px-8 w-fit m-auto hover:bg-primary-200 hover:bg-opacity-20 transition duration-300 ease-in'>Submit</button>
         </form>
     )
 }

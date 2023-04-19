@@ -15,8 +15,8 @@ const Header = () => {
             <h1 className="text-secondary-100 font-extrabold text-4xl md:text-7xl mt-8 mb-4">BENRABAH Mohamed.</h1>
             <h1 className="text-2xl md:text-5xl font-bold mb-8">I build things for the web.</h1>
             <p>
-                I’m a
-                <span className="text-secondary-100 hover:underline hover:text-primary-200 cursor-pointer"> software engineer </span>
+                I’m a 
+                <span className="mx-2 text-secondary-100 hover:underline hover:text-primary-200 cursor-pointer transition duration-300 ease-in">software engineer</span>
                 specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible.</p>
             <div className="mt-10">
                 <a href="#contact">
