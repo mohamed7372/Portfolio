@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import languageData from '../../data/languages.json'
 import softwareData from '../../data/softwares.json'
 import TitleSection from '../ui/TitleSection'
-import ImgProfil from '../../assets/img/benrabah.JPG'
+import ImgProfil from '../../assets/img/mine.jpg'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
@@ -41,7 +41,7 @@ const About = () => {
                     </ul>
                     <p className='mt-4 text-center md:text-left'>Here are a few Softwares I’ve been working:</p>
                 </div>
-                <div className='w-64 h-64 border-2 rounded-md border-primary-200 relative ml-14 mt-4 hidden md:block' data-aos='fade-left'>
+                <div className='w-64 h-[400px] border-2 rounded-md border-primary-200 relative ml-14 mt-4 hidden md:block' data-aos='fade-left'>
                     <img src={ImgProfil} alt="benrabah mohamed"
                         className='object-cover object-left bg-secondary-200 absolute h-full w-full -left-4 -top-4 rounded-lg' />
                     <div className='bg-primary-200 bg-opacity-25 absolute h-full w-full -left-4 -top-4 rounded-lg cursor-pointer hover:bg-opacity-0'>
@@ -62,7 +62,7 @@ const About = () => {
                 )}
             </ul>
 
-            <div className='mt-14 w-64 h-64 border-2 rounded-md border-primary-200 relative md:ml-14 md:hidden block' data-aos='fade-up'>
+            <div className='mt-14 w-64 h-[400px] border-2 rounded-md border-primary-200 relative md:ml-14 md:hidden block' data-aos='fade-up'>
                 <img src={ImgProfil} alt="benrabah mohamed"
                     className='object-cover object-left bg-secondary-200 absolute h-full w-full -left-4 -top-4 rounded-lg' />
                 <div className='bg-primary-200 bg-opacity-25 absolute h-full w-full -left-4 -top-4 rounded-lg cursor-pointer hover:bg-opacity-0'>

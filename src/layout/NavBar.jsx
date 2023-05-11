@@ -1,11 +1,13 @@
 import Button from "../components/ui/Button";
+import Logo from '../assets/img/logo.png'
 
 const NavBar = () => {
     return (
         <nav className="shadow-lg">
             <div className="responsive w-full h-50 flex justify-between items-center py-4">
                 
-                <h1 className="font-extrabold text-xl">BENRABAH.Mohamed</h1>
+                <img src={ Logo} alt="" className="w-20"/>
+                {/* <h1 className="font-extrabold text-xl">BENRABAH.Mohamed</h1> */}
                 <ul className="flex text-sm">
                     <li className="px-4 py-2 text-secondary-100 cursor-pointer hover:text-primary-200 hidden lg:flex items-center transition duration-300 ease-in">
                         <a href="#about">
@@ -25,13 +27,13 @@ const NavBar = () => {
                             Project
                         </a>
                     </li>
-                    <li className="px-4 py-2 text-secondary-100 cursor-pointer hover:text-primary-200 hidden lg:flex items-center transition duration-300 ease-in">
+                    <li className="px-4 py-2 mr-10 text-secondary-100 cursor-pointer hover:text-primary-200 hidden lg:flex items-center transition duration-300 ease-in">
                         <a href="#contact">
                             <span className="text-primary-200 font-medium mr-1">04.</span>
                             Contact
                         </a>
                     </li>
-                    <li className="px-4 py-2">
+                    <li className="">
                         <Button name_btn='Resume' padding='px-3 py-2' />
                     </li>
                 </ul>
