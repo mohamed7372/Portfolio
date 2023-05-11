@@ -21,11 +21,39 @@
     {
         "company": "Hackathons",
         "position": "Front-End",
-        "date": "jui 2020 - jui 2020",
+        "date": "mars 2021 - ??",
         "tasks": [
-            "We chose the Naftal Challenge where we provided a solution to reduce the amount of time people would be waiting in a queue, using artificial intelligence to give you which station would be fast for you based on the charges at that station.",
-            "As well as providing a service for people who need fuel and their cars stop in the middle of nowhere, All this plus a motivational way to get users' attention.",
-            "adsfjaskdfj"
+            "\"Hackit\" - Naftal Challenge where we have provided a solution to reduce the amount of time people wait in a queue, using artificial intelligence to give you the station that will be quick for you.",
+            "\"JunctionX\" - Is an innovative solution, A web application embedded in Techmology’s Moborne touch terminal. Used mainly in public large hospitals to assist patients through their journey."
+        ]
+    },
+    {
+        "company": "Micro Club",
+        "position": "Front-End",
+        "date": "nov 2018 - Present",
+        "tasks": [
+            "Participated in educational courses and bootcamps to learn all about the web and complete tasks",
+            "I have participated in many competitions in web development which were dedicated to club members and competing with each other",
+            "Work on the websites of an MGV event organized by the club",
+            "I participated with a team of club members in the creation of the \"Government Complaints Platform\", called \"CiRM\", for the benefit of the \"Republic Mediator."
+        ]
+    },
+    {
+        "company": "School of AI",
+        "position": "Technical",
+        "date": "nov 2022 - Present",
+        "tasks": [
+            "Participate in artificial intelligence training courses",
+            "Co-organizer of Datathon HAICK",
+            "Co-organizer of INDABAX event"
+        ]
+    },
+    {
+        "company": "44 Tech Mackers",
+        "position": "Leader IT",
+        "date": "feb 2021 - jul 2021",
+        "tasks": [
+            "I was a supervisor of teaching and training students on how to create a project based on conception and the various skills among them POO, java, github, firebase, ..."
         ]
     }
 ]

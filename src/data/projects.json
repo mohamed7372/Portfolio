@@ -1,0 +1,154 @@
+[
+    {
+        "title": "Naftal",
+        "description": "we provided a solution to reduce the amount of time people would be waiting in a queue, using artificial intelligence to give you which station would be fast for you based on the charges at that station.",
+        "type": 0,
+        "lang":[
+            "MERN",
+            "Flutter",
+            "Python / IA"
+        ],
+        "links":{
+            "github":"https://github.com/mohamed7372/Naftal-app-Hackit",
+            "web": "https://devpost.com/software/naftal-ride"
+        }
+    },
+    {
+        "title": "Hygie",
+        "description": "A web application embedded in Techmology’s Moborne touch terminal. Used mainly in public large hospitals to assist patients through their journey.",
+        "type": 0,
+        "lang":[
+            "Html",
+            "Css",
+            "JS",
+            "PHP"
+        ],
+        "links":{
+            "github": "https://github.com/mohamed7372/hygie",
+            "web": ""
+        }
+    },
+    {
+        "title": "Gallery",
+        "description": "A simple website to display images and details like a gallery in a phone that I designed during the MicroClub web development course.",
+        "type": 0,
+        "lang":[
+            "Html",
+            "Css",
+            "JS",
+            "PHP"
+        ],
+        "links":{
+            "github":"https://github.com/mohamed7372/gallery-website",
+            "web": ""
+        }
+    },
+    {
+        "title": "Skribbl",
+        "description": "Free multiplayer drawing and guessing game. Each game has multiple timed rounds. In each round, one player draws a chosen word while the others guess which word indicates the points. The player with the most points at the end of all rounds wins!",
+        "type": 0,
+        "lang":[
+            "Html",
+            "Css",
+            "JS",
+            "Php"
+        ],
+        "links":{
+            "github":"https://github.com/mohamed7372/Skribbl-Game-MC",
+            "web": ""
+        }
+    },
+    {
+        "title": "Nechki (CIRM)",
+        "description": "Is a secure digital complaints platform that we have set up to allow citizens and businesses to file requests, complaints, claims and solicitations. You can now submit your complaints to the various government departments, in an easy, secure way, Echki !",
+        "type": 0,
+        "lang":[
+            "Html",
+            "Css",
+            "JS",
+            "React"
+        ],
+        "links":{
+            "github":"",
+            "web": "https://nechki.netlify.app/"
+        }
+    },
+    {
+        "title": "Quran",
+        "description": "landing page for ramadan.",
+        "type": 0,
+        "lang":[
+            "Html",
+            "Css"
+        ],
+        "links":{
+            "github":"https://github.com/mohamed7372/quran",
+            "web": "https://mohamed7372.github.io/quran/"
+        }
+    },
+    {
+        "title": "Medical Practice Management",
+        "description": "A medical practice management system is a type of healthcare software that manages the day-to-day operations of a clinic, such as appointment scheduling, billing and other administrative tasks.",
+        "type": 2,
+        "lang":[
+            "Java",
+            "Java Swing",
+            "Mysql"
+        ],
+        "links":{
+            "github":"https://github.com/mohamed7372/Management-Of-A-Medical-Practice--JAVA",
+            "web": ""
+        }
+    },
+    {
+        "title": "Hospital Management",
+        "description": "It is a program to manage a hospital during the Corona period (beds, ambulances, doctors, patients...).",
+        "type": 2,
+        "lang":[
+            "Windev"
+        ],
+        "links":{
+            "github":"https://github.com/mohamed7372/Hospital-Management--WINDEV",
+            "web": ""
+        }
+    },
+    {
+        "title": "Surrounded Circle",
+        "description": "Are you ready to play? Avoid the various obstacles that are abundant in the levels to hinder you from the level. Think fast and press to complete the circle to destroy the obstacle and reach the end of the game!",
+        "type": 1,
+        "lang":[
+            "Unity",
+            "C#"
+        ],
+        "links":{
+            "github":"",
+            "web": "https://play.google.com/store/apps/details?id=com.axegames.surroundedcircle&hl=en&gl=US"
+        }
+    },
+    {
+        "title": "Dir El Khir",
+        "description": "It is a program to manage a hospital during the Corona period (beds, ambulances, doctors, patients...).",
+        "type": 1,
+        "lang":[
+            "Android Studio",
+            "Java"
+        ],
+        "links":{
+            "github":"",
+            "web": ""
+        }
+    },
+    {
+        "title": "Calculator",
+        "description": "An application android makes simple calculations like plus, division, multiplication, subtraction, modulo. It is such a nice and modern design.",
+        "type": 1,
+        "lang":[
+            "Android Studio",
+            "Java"
+        ],
+        "links":{
+            "github":"",
+            "web": ""
+        }
+    }
+]
