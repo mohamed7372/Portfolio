@@ -17,8 +17,8 @@ const Project = () => {
     return (
         <div className='responsive flex flex-col justify-center items-center min-h-screen'>
             <h4 className='text-sm text-primary-200' data-aos='fade-left'>view the archive</h4>
-            <h1 className='text-5xl text-secondary-100 font-bold mt-4 mb-10 text-center' data-aos='fade-right'>Other Noteworthy Projects</h1>
-            <ul className='flex mb-8 border-b border-secondary-200'>
+            <h1 className='text-xl md:text-5xl text-secondary-100 font-bold mt-4 mb-10 text-center' data-aos='fade-right'>Other Noteworthy Projects</h1>
+            <ul className='flex md:mb-8 border-b border-secondary-200'>
                 <li 
                     className={`${type===0 ? 'text-primary-200 border-b border-primary-200' : 'text-secondary-200'} pb-4 px-4 font-semibold cursor-pointer`}
                     onClick={()=> setType(0)}>

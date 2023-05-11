@@ -11,48 +11,48 @@ const CardBuild = ({ build, inverse = false }) => {
 
     const slides = build.img.map((item, idx) => {
         var imgSrc = require(`../../assets/img/${item}`)
-        return <img src={imgSrc} key={idx} alt = "" className = 'h-96 w-full object-contain' />
+        return <img src={imgSrc} key={idx} alt = "" className = 'md:h-96 w-full object-contain' />
     })
 
     return (
-        <div className='flex items-center w-full relative mt-12 mb-20 h-[380px]'>
+        <div className='flex flex-col md:flex-row items-center w-full relative mt-12 mb-20 h-fit md:h-[380px]'>
             {
                 inverse
                     ?
-                    <div className={`z-40 w-[65%] right-0 h-[380px] absolute opacity-30 hover:opacity-100 duration-500 bg-gray-800 flex items-center`} data-aos='fade-left'>
+                    <div className={`mt-6 md:mt-0 order-2 md:order-1 z-40 w-full md:w-[65%] right-0 h-[200px] md:h-[380px] md:absolute opacity-30 hover:opacity-100 duration-500 bg-gray-800 flex items-center`} data-aos='fade-left'>
                         <Carousel children={slides}/>
                     </div>
                     :
-                    <div className={`z-40 w-[65%] left-0 h-[380px] absolute opacity-30 hover:opacity-100 duration-500 bg-gray-800 flex items-center`} data-aos='fade-right'>
+                    <div className={`mt-6 md:mt-0 order-2 md:order-1 z-40 w-full md:w-[65%] left-0 h-[200px] md:h-[380px] md:absolute opacity-30 hover:opacity-100 duration-500 bg-gray-800 flex items-center`} data-aos='fade-right'>
                         <Carousel children={slides}/>
                     </div>
             }
-            <div className={`w-full flex flex-col ${inverse ? 'lg:items-start' : 'lg:items-end'} items-center justify-center relative ${inverse && 'order-1'}`}>
-                <div className={`w-1/3 flex flex-col ${inverse ? 'items-start' : 'items-end'}`}>
-                    <h6 className={`${inverse ? 'lg:text-left' : 'lg:text-right'} text-primary-200 text-xs mb-1`} data-aos='fade-down'>{build.type}</h6>
+            <div className={`order-1 md:order-2 w-full flex flex-col ${inverse ? 'lg:items-start' : 'lg:items-end'} items-center justify-center relative ${inverse && 'order-1'}`}>
+                <div className={`w-full md:w-1/3 flex flex-col ${inverse ? 'items-start' : 'items-end'}`}>
+                    <h6 className={`${inverse ? 'lg:text-left' : 'lg:text-right'} m-auto md:m-0 text-primary-200 text-xs mb-1`} data-aos='fade-down'>{build.type}</h6>
                     {inverse
                         ?
                         <>
-                            <h2 className={`lg:text-left text-center text-secondary-100 font-bold text-xl lg:text-3xl mb-4 lg:mb-4`} data-aos='fade-right'>{build.title}</h2>
-                            <div className={`z-50 relative bg-secondary-250 shadow-lg p-4 w-[400px] hidden lg:block`} data-aos='zoom-in'>
-                                <p className={`text-left text-sm`}>{build.description}</p>
+                            <h2 className={`w-full lg:text-left text-center text-secondary-100 font-bold text-xl lg:text-3xl mb-4 lg:mb-4`} data-aos='fade-right'>{build.title}</h2>
+                            <div className={`z-50 md:relative bg-secondary-250 shadow-lg p-4 w-full md:w-[400px]`} data-aos='zoom-in'>
+                                <p className={`text-center md:text-left text-sm`}>{build.description}</p>
                             </div>
                         </>
                         : 
                         <>
-                            <h2 className={`lg:text-right text-center text-secondary-100 font-bold text-xl lg:text-3xl mb-4 lg:mb-4`} data-aos='fade-left'>{build.title}</h2>
-                            <div className={`z-50 relative bg-secondary-250 shadow-lg p-4 w-[400px] hidden lg:block`} data-aos='zoom-in'>
-                                <p className={`text-right text-sm`}>{build.description}</p>
+                            <h2 className={`w-full lg:text-right text-center text-secondary-100 font-bold text-xl lg:text-3xl mb-4 lg:mb-4`} data-aos='fade-left'>{build.title}</h2>
+                            <div className={`z-50 md:relative bg-secondary-250 shadow-lg p-4 w-full md:w-[400px]`} data-aos='zoom-in'>
+                                <p className={`text-center md:text-right text-sm`}>{build.description}</p>
                             </div>
                         </>
                     }
                     
-                    <ul className={`flex text-sm mt-4 font-light ${inverse ? 'justify-start' : 'justify-end'}`} data-aos='fade-up'>
+                    <ul className={`flex text-xs md:text-sm mt-4 font-light mx-auto md:mx-0 ${inverse ? 'justify-start' : 'justify-end'}`} data-aos='fade-up'>
                         {build.lang.map((item, idx) => 
-                            <li key={idx} className='capitalize ml-3'>{item}</li>
+                            <li key={idx} className='capitalize mx-2 md:ml-3'>{item}</li>
                         )}
                     </ul>
-                    <ul className={`flex items-center ${build.nbrLink > 0 && 'h-12'} ${inverse ? 'justify-start' : 'justify-end'}`} data-aos='fade-up'>
+                    <ul className={`flex items-center mx-auto md:mx-0 ${build.nbrLink > 0 && 'h-12'} ${inverse ? 'justify-start' : 'justify-end'}`} data-aos='fade-up'>
                         {build.git !== '' &&
                             <li className='mt-2 ml-3 cursor-pointer'>
                                 <a href={build.git}>
