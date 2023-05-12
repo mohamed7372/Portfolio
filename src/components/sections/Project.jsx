@@ -42,7 +42,7 @@ const Project = () => {
                                         <CardProject project={item}/>
                                     </div>
                                 )
-                            return <div key={idx}></div>
+                            
                         }
                     )
                 }
