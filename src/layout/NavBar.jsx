@@ -1,9 +1,42 @@
+import axios from 'axios'
+import fileDownload from 'js-file-download'
+import Notification from '../components/ui/Notification'
 import Button from "../components/ui/Button";
 import Logo from '../assets/img/logo.png'
+import { useState } from 'react';
 
 const NavBar = () => {
+    const [notification, showNotification] = useState(false)
+    const [hideNot, setHideNot] = useState(false)
+
+    const handleDownload = (url, filename) => {
+        axios.get(url, {
+            responseType: 'blob',
+        })
+        .then((res) => {
+            fileDownload(res.data, filename)
+
+            showNotification(true)
+            setTimeout(() => {
+                setHideNot(true)
+            }, 3000);
+            setTimeout(() => {
+                setHideNot(false)
+                showNotification(false)
+            }, 3500);
+        })
+    }
+    
     return (
         <nav className="shadow-lg">
+            {notification
+                &&
+                <div className={ hideNot ? 'animate-hide' : ''}>
+                    <Notification
+                        title={'Successfully Downloaded!'}
+                        body={'Thank you for download my resume.'} />
+                </div>
+            }
             <div className="responsive w-full h-50 flex justify-between items-center py-4">
                 
                 <img src={ Logo} alt="" className="w-20"/>
@@ -34,7 +67,8 @@ const NavBar = () => {
                         </a>
                     </li>
                     <li className="">
-                        <Button name_btn='Resume' padding='px-3 py-2' />
+                        <Button name_btn='Resume' padding='px-3 py-2'
+                            handleBtn={() => handleDownload('../../BENRABAH Mohamed CV-FR v-2.7.pdf', 'BENRABAH Mohamed CV-FR.pdf')}/>
                     </li>
                 </ul>
             </div>

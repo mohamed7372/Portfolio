@@ -13,12 +13,7 @@ const ContactForm = () => {
         e.preventDefault()
         emailjs
             .sendForm('service_1kye05p','template_9yy8aha',e.target,'-fFP_4sgUBevOp1iQ')
-            // .then(res => { 
-                
-            // })
-            // .then(error => { 
-            //     showNotification(false)
-            // })
+
         
         showNotification(true)
         setTimeout(() => {
