@@ -2,7 +2,7 @@ import React from 'react'
 
 const Notification = ({title, body}) => {
     return (
-        <div className="flex fixed right-10 bottom-10 animate-slideToLeft">
+        <div className="flex fixed right-10 bottom-36 animate-slideToLeft">
             <div className="m-auto">
                 <div className="bg-secondary-250 rounded-lg border-gray-300 border p-3 shadow-lg">
                     <div className="flex flex-row">
@@ -12,8 +12,8 @@ const Notification = ({title, body}) => {
                             </svg>
                         </div>
                         <div className="ml-2 mr-6">
-                            <span className="font-semibold">{title}</span>
-                            <span className="block text-gray-500">{body}</span>
+                            <span className="font-semibold text-xs">{title}</span>
+                            <span className="block text-gray-500 text-xs">{body}</span>
                         </div>
                     </div>
                 </div>
