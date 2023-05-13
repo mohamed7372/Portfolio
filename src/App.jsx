@@ -10,7 +10,7 @@ import NavBar from "./layout/NavBar";
 
 function App() {
   return (
-    <div className="App w-full">
+    <div className="App w-full overflow-hidden">
       <NavBar />
       <Header />
       <About />
