@@ -1,7 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import SocialMedia from '../components/ui/SocialMedia'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 const Footer = () => {
+    useEffect(() => {
+        AOS.init({duration:2000});
+    }, [])
+
     return (
         // <div className='px-32 w-full h-fit fixed bottom-0 left-0 flex justify-between'>
         <div className=''>
