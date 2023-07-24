@@ -4,7 +4,7 @@ import Button from "../ui/Button";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 
-import Typed from 'react-typed';
+// import Typed from 'react-typed';
 
 const Header = () => {
     useEffect(() => {
@@ -14,13 +14,13 @@ const Header = () => {
     return (
         <div className="responsive min-h-screen flex flex-col justify-center -mt-10 w-full">
             <h6 className="text-primary-200 tracking-widest text-sm" data-aos='fade-down'>Hi, my name is</h6>
-            <h1 className="text-secondary-100 font-extrabold text-4xl md:text-7xl mt-8 mb-4">
-                <Typed
+            <h1 className="text-secondary-100 font-extrabold text-4xl md:text-7xl mt-8 mb-4">BENRABAH Mohamed.
+                {/* <Typed
                     strings={['BENRABH Mohamed.']}
                     typeSpeed={40}
                     backSpeed={50}
                     // attr="placeholder"
-                    loop />
+                    loop /> */}
             </h1>
             <h1 className="text-2xl md:text-5xl font-bold mb-8" data-aos='fade-right'>I build things for the web.</h1>
             <p data-aos='fade-up'>
