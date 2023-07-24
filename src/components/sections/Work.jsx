@@ -39,7 +39,7 @@ const Work = () => {
                 <div className={`mt-2.5 w-full`} data-aos='fade-left'>
                     <h3 className='text-secondary-100 font-bold capitalize'>
                         {selectWork.position}
-                        <span className='text-primary-200 ml-3'>@ {selectWork.company}</span>
+                        <span className='text-primary-200 ml-3'>@{selectWork.company}</span>
                     </h3>
                     <h6 className='text-xs mt-2'>{selectWork.date}</h6>
                     <ul className='mt-4 '>

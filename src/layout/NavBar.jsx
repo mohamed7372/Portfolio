@@ -46,7 +46,7 @@ const NavBar = () => {
             }
             <div className="responsive w-full h-50 flex justify-between items-center py-4">
                 
-                <img src={ Logo} alt="" className="w-20" data-aos='fade-out'/>
+                <img src={ Logo} alt="" className="w-[160px]" data-aos='fade-out'/>
                 {/* <h1 className="font-extrabold text-xl">BENRABAH.Mohamed</h1> */}
                 <ul className="flex text-sm">
                     <li data-aos='zoom-in' className="px-4 py-2 text-secondary-100 cursor-pointer hover:text-primary-200 hidden lg:flex items-center transition duration-300 ease-in">

@@ -1,17 +1,14 @@
 import React, { useEffect } from 'react'
 import SocialMedia from '../components/ui/SocialMedia'
-import AOS from 'aos';
+import exieee from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 const Footer = () => {
-    useEffect(() => {
-        AOS.init({duration:2000});
-    }, [])
 
     return (
         // <div className='px-32 w-full h-fit fixed bottom-0 left-0 flex justify-between'>
         <div className=''>
-            <SocialMedia/>
+            <SocialMedia />
             <div className='hidden md:flex flex-col items-center fixed lg:flex right-20 xl:right-40 bottom-0'>
                 <div className='h-28 w-1 border-l border-secondary-200 relative'>
                     <a href="mailto:benrabahmohamed530@gmail.com"

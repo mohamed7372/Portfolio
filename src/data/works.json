@@ -1,5 +1,14 @@
 [
     {
+        "company": "Goubba",
+        "position": "Full Stack",
+        "date": "jui 2023 - Present",
+        "tasks": [
+            "Develop everything related to the front-end of the sites using React or Vuejs, make modification on the front-end and repairing errors.",
+            "Develop bakcend using Laravel and mysql, and create API, Repairing errors, Add new features."
+        ]
+    },
+    {
         "company": "Freelance",
         "position": "Full Stack",
         "date": "jui 2020 - Present",
