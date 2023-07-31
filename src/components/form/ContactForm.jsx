@@ -47,7 +47,7 @@ const ContactForm = () => {
             </select>
             <input type="text" name="title" id="title" placeholder='Enter a title' className='placeholder-secondary-200 text-secondary-100 mt-4 rounded-md outline-none px-3 py-2 text-sm bg-secondary-250'/>
 
-            <input type="text" name="name" id="name" placeholder='Enter a name' className='placeholder-secondary-200 text-secondary-100 mt-4 rounded-md outline-none px-3 py-2 text-sm bg-secondary-250'/>
+            <input type="text" name="name" id="name" placeholder='Enter your name' className='placeholder-secondary-200 text-secondary-100 mt-4 rounded-md outline-none px-3 py-2 text-sm bg-secondary-250'/>
             
             <input type="email" name="email" id="email" placeholder='Enter your email' className='placeholder-secondary-200 text-secondary-100 mt-4 rounded-md outline-none px-3 py-2 text-sm bg-secondary-250'/>
 
