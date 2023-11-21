@@ -1,61 +1,113 @@
-import React, { useEffect, useState } from 'react'
-import emailjs from 'emailjs-com'
-import Notification from '../ui/Notification'
+import React, { useEffect, useState } from "react";
+import emailjs from "emailjs-com";
+import Notification from "../ui/Notification";
 
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
 
-const ContactForm = () => {
-    const [notification, showNotification] = useState(false)
-    const [hideNot, setHideNot] = useState(false)
+const ContactForm = ({}) => {
+  const [notification, showNotification] = useState(false);
+  const [hideNot, setHideNot] = useState(false);
 
-    const sendEmail = (e) => {
-        e.preventDefault()
-        emailjs
-            .sendForm('service_1kye05p','template_9yy8aha',e.target,'-fFP_4sgUBevOp1iQ')
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm(
+      "service_1kye05p",
+      "template_9yy8aha",
+      e.target,
+      "-fFP_4sgUBevOp1iQ"
+    );
 
-        
-        showNotification(true)
-        setTimeout(() => {
-            setHideNot(true)
-            e.target.reset()
-        }, 3000);
-        setTimeout(() => {
-            setHideNot(false)
-            showNotification(false)
-        }, 3500);
-    }
-    
-    useEffect(() => {
-        AOS.init({duration:2000});
-    }, [])
+    showNotification(true);
+    setTimeout(() => {
+      setHideNot(true);
+      e.target.reset();
+    }, 3000);
+    setTimeout(() => {
+      setHideNot(false);
+      showNotification(false);
+    }, 3500);
+  };
 
-    return (
-        <form className='flex flex-col w-full' onSubmit={sendEmail}>
-            {notification
-                &&
-                <div className={ hideNot ? 'animate-hide' : ''}>
-                    <Notification
-                        title={'Successfully Sended!'}
-                        body={'Thank you for your message.'} />
-                </div>
-            }
-            <select name="service" id="" defaultValue={'DEFAULT'} className='rounded-md outline-none text-sm px-2 py-2 bg-secondary-250 placeholder-secondary-200 text-secondary-100'>
-                <option value="DEFAULT" >Choose service you want</option>
-                <option value="website">Need A webSite</option>
-                <option value="deal">Make a deal with you</option>
-            </select>
-            <input type="text" required name="title" id="title" placeholder='Enter a title' className='placeholder-secondary-200 text-secondary-100 mt-4 rounded-md outline-none px-3 py-2 text-sm bg-secondary-250'/>
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
 
-            <input type="text" required name="name" id="name" placeholder='Enter your name' className='placeholder-secondary-200 text-secondary-100 mt-4 rounded-md outline-none px-3 py-2 text-sm bg-secondary-250'/>
-            
-            <input type="email" required name="email" id="email" placeholder='Enter your email' className='placeholder-secondary-200 text-secondary-100 mt-4 rounded-md outline-none px-3 py-2 text-sm bg-secondary-250'/>
+  return (
+    <form className="flex flex-col w-full" onSubmit={sendEmail}>
+      {notification && (
+        <div className={hideNot ? "animate-hide" : ""}>
+          <Notification
+            title={"Successfully Sended!"}
+            body={"Thank you for your message."}
+          />
+        </div>
+      )}
+      <select
+        name="service"
+        id=""
+        defaultValue={"DEFAULT"}
+        className="rounded-md outline-none text-sm px-2 py-2 bg-secondary-250 placeholder-secondary-200 text-secondary-100"
+      >
+        <option value="DEFAULT">Choose service you want</option>
+        <option value="website">Need A Website</option>
+        <option value="deal">Make a deal with you</option>
+      </select>
+      <input
+        type="text"
+        required
+        name="title"
+        id="title"
+        placeholder="Enter a title"
+        className="placeholder-secondary-200 text-secondary-100 mt-4 rounded-md outline-none px-3 py-2 text-sm bg-secondary-250"
+      />
 
-            <textarea required name="message" id="message" placeholder='Enter your message' cols="30" rows="10" className='placeholder-secondary-200 text-secondary-100 mt-4 rounded-md outline-none px-3 py-2 text-sm bg-secondary-250 max-h-64 min-h-[40px]'></textarea>
+      <div className="flex items-center justify-between">
+        <input
+          type="text"
+          required
+          name="name"
+          id="name"
+          placeholder="Enter your name"
+          className="w-[49%] placeholder-secondary-200 text-secondary-100 mt-4 rounded-md outline-none px-3 py-2 text-sm bg-secondary-250"
+        />
+        <input
+          type="tel"
+          required
+          name="phone"
+          id="name"
+          placeholder="Enter your phone number"
+          className="w-[49%] placeholder-secondary-200 text-secondary-100 mt-4 rounded-md outline-none px-3 py-2 text-sm bg-secondary-250"
+        />
+      </div>
 
-            <button type="submit" className='rounded-md border mt-4 border-primary-200 text-primary-200 py-3 px-8 w-fit m-auto hover:bg-primary-200 hover:bg-opacity-20 transition duration-300 ease-in'>Submit</button>
-        </form>
-    )
-}
+      <input
+        type="email"
+        required
+        name="email"
+        id="email"
+        placeholder="Enter your email"
+        className="placeholder-secondary-200 text-secondary-100 mt-4 rounded-md outline-none px-3 py-2 text-sm bg-secondary-250"
+      />
 
-export default ContactForm
+      <textarea
+        required
+        name="message"
+        id="message"
+        placeholder="Enter your message"
+        cols="30"
+        rows="10"
+        className="placeholder-secondary-200 text-secondary-100 mt-4 rounded-md outline-none px-3 py-2 text-sm bg-secondary-250 max-h-64 min-h-[40px]"
+      ></textarea>
+
+      <button
+        type="submit"
+        className="rounded-md border mt-4 border-primary-200 text-primary-200 py-3 px-8 w-fit m-auto hover:bg-primary-200 hover:bg-opacity-20 transition duration-300 ease-in"
+      >
+        Send
+      </button>
+    </form>
+  );
+};
+
+export default ContactForm;
